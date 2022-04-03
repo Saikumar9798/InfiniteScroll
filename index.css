@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --bg: #394141;
+  --primary: #8FD974;
+}
+
+body {
+  background-color: var(--bg);
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+#container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  place-items: center;
+}
+
+#title {
+  color: var(--primary);
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  margin: .25em;
+}
+
+#image-wrapper .box {
+  width: 4em;
+  height: 4em;
+  background-color: var(--primary);
+  display: grid;
+  place-items: center;
+  color: var(--bg);
+  font-size: 5rem;
+  font-weight: bold;
+  margin: 1rem;
+}
